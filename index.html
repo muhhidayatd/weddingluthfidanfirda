@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Luthfi & Firda — Undangan Pernikahan</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=DM+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="opening" id="opening">
+  <div class="opening-bg"></div>
+  <div class="opening-content">
+    <p class="eyebrow">THE WEDDING OF</p>
+    <h1>Raka <span>&</span> Aisyah</h1>
+    <p class="date">12 · 12 · 2026</p>
+    <p class="guest">Kepada Yth.<br><strong>Tamu Undangan</strong></p>
+    <button class="btn" id="openBtn">Buka Undangan</button>
+  </div>
+</div>
+
+<header class="hero">
+  <div class="hero-overlay"></div>
+  <div class="hero-content">
+    <p class="eyebrow">WE ARE GETTING MARRIED</p>
+    <h1>Raka <span>&</span> Aisyah</h1>
+    <p>Sabtu, 12 Desember 2026</p>
+  </div>
+</header>
+
+<main>
+<section class="intro reveal">
+  <p class="eyebrow">بِسْمِ اللَّهِ الرَّحْمَنِ الرَّحِيمِ</p>
+  <blockquote>“Dan di antara tanda-tanda kekuasaan-Nya ialah Dia menciptakan untukmu pasangan hidup dari jenismu sendiri supaya kamu merasa tenteram kepadanya, dan dijadikan-Nya di antaramu rasa kasih dan sayang.”</blockquote>
+  <small>QS. Ar-Rum: 21</small>
+</section>
+
+<section class="couple reveal">
+  <p class="eyebrow">THE COUPLE</p>
+  <h2>Mempelai</h2>
+  <div class="couple-grid">
+    <article class="person">
+      <div class="portrait portrait-groom">R</div>
+      <h3>Muhammad Luthfi Darmawan</h3>
+      <p>Putra pertama dari<br><b>Bapak H. Darman</b> & <b>Ibu Hj. Hasniawan</b></p>
+    </article>
+    <div class="ampersand">&</div>
+    <article class="person">
+      <div class="portrait portrait-bride">A</div>
+      <h3>Sitti Firda</h3>
+      <p>Putri .... dari<br><b>Bapak ....</b> & <b>Ibu ....</b></p>
+    </article>
+  </div>
+</section>
+
+<section class="story reveal">
+  <div>
+    <p class="eyebrow">OUR STORY</p>
+    <h2>Awal dari sebuah cerita</h2>
+    <p>Kami dipertemukan oleh sebuah kebetulan sederhana, lalu perlahan menyadari bahwa setiap pertemuan memiliki alasan. Setelah melalui banyak cerita, tawa, dan doa, kami memilih untuk melangkah bersama menuju kehidupan baru.</p>
+  </div>
+</section>
+
+<section class="event reveal">
+  <p class="eyebrow">SAVE THE DATE</p>
+  <h2>Waktu & Tempat</h2>
+  <div class="event-grid">
+    <article>
+      <span class="icon">01</span>
+      <h3>Akad Nikah</h3>
+      <p><b>Sabtu, 12 Desember 2026</b><br>09.00 — 10.00 WITA</p>
+      <p>Masjid Al-Ikhlas<br>Makassar, Sulawesi Selatan</p>
+    </article>
+    <article>
+      <span class="icon">02</span>
+      <h3>Resepsi</h3>
+      <p><b>Sabtu, 12 Desember 2026</b><br>11.00 — 15.00 WITA</p>
+      <p>Grand Ballroom Example Hotel<br>Jl. Contoh No. 88, Makassar</p>
+    </article>
+  </div>
+  <a class="map-btn" href="https://maps.google.com/?q=Makassar" target="_blank">Buka Google Maps ↗</a>
+</section>
+
+<section class="countdown reveal">
+  <p class="eyebrow">COUNTING DOWN TO OUR DAY</p>
+  <h2>Menuju Hari Bahagia</h2>
+  <div class="timer">
+    <div><strong id="days">00</strong><span>Hari</span></div>
+    <div><strong id="hours">00</strong><span>Jam</span></div>
+    <div><strong id="minutes">00</strong><span>Menit</span></div>
+    <div><strong id="seconds">00</strong><span>Detik</span></div>
+  </div>
+</section>
+
+<section class="gallery reveal">
+  <p class="eyebrow">OUR MOMENTS</p>
+  <h2>Galeri</h2>
+  <div class="gallery-grid">
+    <div class="photo p1">Luthfi & Firda</div>
+    <div class="photo p2">A moment to remember</div>
+    <div class="photo p3">Together</div>
+    <div class="photo p4">Forever begins</div>
+  </div>
+</section>
+
+<section class="rsvp reveal">
+  <p class="eyebrow">RSVP</p>
+  <h2>Konfirmasi Kehadiran</h2>
+  <form id="rsvpForm">
+    <input id="name" required placeholder="Nama lengkap">
+    <select id="attendance" required>
+      <option value="">Konfirmasi kehadiran</option>
+      <option>Hadir</option>
+      <option>Tidak hadir</option>
+    </select>
+    <select id="guests" required>
+      <option value="">Jumlah tamu</option>
+      <option>1 orang</option><option>2 orang</option>
+    </select>
+    <button class="btn" type="submit">Kirim Konfirmasi</button>
+  </form>
+  <p id="rsvpMessage" class="message"></p>
+</section>
+
+<section class="gift reveal">
+  <p class="eyebrow">WEDDING GIFT</p>
+  <h2>Tanda Kasih</h2>
+  <p>Bagi yang ingin memberikan tanda kasih, dapat melalui rekening berikut.</p>
+  <div class="bank-card">
+    <span>Bank Example</span>
+    <strong id="account">1234567890</strong>
+    <small>a.n. Raka Pratama</small>
+    <button onclick="copyAccount()">Salin Nomor Rekening</button>
+  </div>
+</section>
+
+<section class="wishes reveal">
+  <p class="eyebrow">WISHES</p>
+  <h2>Doa & Ucapan</h2>
+  <form id="wishForm">
+    <input id="wishName" required placeholder="Nama">
+    <textarea id="wishText" required placeholder="Tulis doa dan ucapan..."></textarea>
+    <button class="btn" type="submit">Kirim Ucapan</button>
+  </form>
+  <div id="wishesList" class="wishes-list"></div>
+</section>
+</main>
+
+<footer>
+  <p>Terima kasih atas doa dan kehadirannya.</p>
+  <h2>Raka & Aisyah</h2>
+  <small>12 · 12 · 2026</small>
+</footer>
+
+<button class="music" id="musicBtn" aria-label="Musik">♪</button>
+<audio id="music" loop>
+  <!-- Ganti src dengan file musik milikmu, misalnya music.mp3 -->
+</audio>
+<script src="script.js"></script>
+</body>
+</html>
